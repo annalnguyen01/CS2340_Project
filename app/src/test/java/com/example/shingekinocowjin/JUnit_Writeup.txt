@@ -1,0 +1,122 @@
+
+towerCostChanges()
+    - This JTest checks to make sure that the cost of our towers (cows) change based on the difficulty the player has chosen. This
+     is a specific requirement in the implementation section for M3.
+
+insufficientFunds()
+    - This JTest checks to make sure that a player cannot buy a tower if they do not have enough funds. Aa text notification
+    should show up briefly telling the player they do not have enough money. This is a specific requirement in the
+    implementation section for M3.
+
+buyTower()
+    - This JTest should check if a player is able to properly buy a tower from the shop. The cost of the tower
+    should subtract from the player's total money pool. The shop should have an empty slot. This JTest is important as it
+    ensures all vital systems work after buying a tower.
+
+placeTower()
+    - The JTest checks to see if the player is able to properly place a tower on the map on the game screen. Text
+    should popup telling the player that they cannot place a tower on the path. When a tower is correctly, placed
+    the bench should have an empty slot. This is important as the implementation want the towers to be correctly
+    placed.
+
+bench()
+    - When a cow is bought, a cow should be on the bench. When a cow is placed, the bench should have
+    an empty slot on the bench. This is essential in the placing towers and buying towers pipeline,
+    which is required in this implementation.
+
+shopItemExists()
+    - When the shop is pulled up, cows should be displayed on the shop pop-up screen. When a cow is bought,
+    it should disappear. This is essential in the placing towers and buying towers pipeline,
+    which is required in this implementation.
+
+startResources()
+    - Checks to see if the name and difficulty set in the configuration screen. The player
+    should have the name set in the configuration screen. In addition, the difficulty should
+    change how money the player starts off with as well as how much health their monument
+    has. This is an important JTest as the stats set from the difficulty screen change how other
+    interactions, especially with buying towers, works.
+
+reroll()
+    - The JTest checks to see if new cows are displayed in the shop screen. In addition, this should
+    also take away money from the player. This is important as it is a vital game mechanic in this game.
+    Furthermore, it can effect the player's economy since re-rolling the shop cost money.
+
+checkGameOverHealth()
+	- Checks that the GAMESTATE is equal to GAMEOVER when the monument health is <= 0. When this occurs and GAMESTATE is
+	  equal to 0, the GAMEOVER scene should appear and prompt the user with an option to go back to the menu. This implementation
+	  is a part of M4.
+
+checkEasyDifficulty()
+	- Checks that the difficulty variable is set to 1 when the the Easy button is pressed. When this occurs the monument health is
+	  set to 100, gold given is set to 3, and difficulty is set to 1. This is an important JUnit test to make 
+	  sure that the variables we set when we press the easy button is correct.
+
+checkMediumDifficulty()
+	- Checks that the difficulty variable is set to 2 when the the Medium button is pressed. When this occurs the monument health is
+	  set to 75, gold given is set to 6, and difficulty is set to 2. This is an important JUnit test to make 
+	  sure that the variables we set when we press the Medium button is correct.
+
+checkHardDifficulty()
+	- Checks that the difficulty variable is set to 3 when the the Hard button is pressed. When this occurs the monument health is
+	  set to 50, gold given is set to 9, and difficulty is set to 3. This is an important JUnit test to make 
+	  sure that the variables we set when we press the Hard button is correct.
+
+EasyCowPrice()
+	- This JUNIT checks the cost of the price of a cow when difficulty is equal to Easy(1). When difficulty is set to Easy,
+	  cow price is equal to 3. This is an important test because we need to ensure that the price of the cow is determined
+	  by the difficulty variable.
+
+MediumCowPrice()
+	- This JUNIT checks the cost of the price of a cow when difficulty is equal to Medium(3). When difficulty is set to Medium,
+	  cow price is equal to 6. This is an important test because we need to ensure that the price of the cow is determined
+	  by the difficulty variable.
+
+HardCowPrice()
+	- This JUNIT checks the cost of the price of a cow when difficulty is equal to Hard(5). When difficulty is set to Hard,
+	  cow price is equal to 9. This is an important test because we need to ensure that the price of the cow is determined
+	  by the difficulty variable.
+
+checkEasyMoney()
+	- checkEasyMoney() tests that the amount of money given to the player when the difficulty is equal to EASY is equivalent to
+	  3. This is essential in setting the correct of amount of money based on the difficulty.
+
+checkMediumMoney()
+	- checkMediumMoney() tests that the amount of money given to the player when the difficulty is equal to Medium is equivalent to
+	  6. This is essential in setting the correct of amount of money based on the difficulty.
+
+checkHardMoney()
+	- checkHardMoney() tests that the amount of money given to the player when the difficulty is equal to Hard is equivalent to
+	  9. This is essential in setting the correct of amount of money based on the difficulty.
+
+checkFarmerHealth()
+
+	- checkFarmerHealth() tests that the farmer health after being hit with a pellet from a basic cow is -1. This is important to test
+	  our basic cow deals one damage.
+
+checkNumberEnemies()
+
+	- checkNumberEnemies() checks that the number of enemies at the start of round 1 is equal to 3.
+
+checkTowerDamage()
+
+	- checkTowerDamage() checks that the tower damage of the basic cow is equal to 1.
+
+checkMonumentHealth()
+
+	- checkMonumentHealth() checks that the monument health is equal to 5 after all 3 enemies pass through 
+
+checkBasicFarmerGold()
+	
+	- checkBasicFarmerGold() checks that the basic farmer gold after you kill them is equal to 1.
+
+checkMediumFarmerGold()
+
+	- checkMediumFarmerGold() checks that the medium farmer gold after you kill them is equal to 3.
+
+checkFastFarmerGold()
+
+	- checkFastFarmerGold() checks that the fast farmer gold after you kill them is equal to 5.
+
+checkRoundEndGold()
+
+	- checkRoundEndGold() checks that the gold you gain at the end of round 1 is equal to 9.
